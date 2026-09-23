@@ -1,0 +1,2716 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no,
+viewport-fit=cover">
+
+<title>untuk kamu andra sayang ❤️</title>
+
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+
+<style>
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+  -webkit-tap-highlight-color:transparent;
+  -webkit-touch-callout:none;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+
+  margin:0;
+  padding:0;
+
+  overflow:hidden;
+
+  background:#000;
+}
+
+body{
+  font-family:
+    "Montserrat",
+    sans-serif;
+
+  color:#fff;
+
+  overscroll-behavior:none;
+}
+
+
+/* ==================================================
+   MAIN APP
+================================================== */
+
+.app{
+
+  width:100%;
+  height:100dvh;
+
+  min-height:100svh;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+
+  background:#000;
+}
+
+
+.book{
+
+  position:relative;
+
+  width:100%;
+  height:100%;
+
+  max-width:600px;
+
+  overflow:hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(255,255,255,.045),
+      transparent 38%
+    ),
+
+    linear-gradient(
+      145deg,
+      #350408,
+      #610a11 50%,
+      #350408
+    );
+}
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.page{
+
+  position:absolute;
+
+  pointer-events:none;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:none;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:
+    max(25px,env(safe-area-inset-top))
+    18px
+    max(70px,env(safe-area-inset-bottom))
+    18px;
+
+  overflow:hidden;
+
+  opacity:0;
+}
+
+
+.page.active{
+
+  display:flex;
+
+  pointer-events:auto;
+
+  animation:
+    pageIn .5s ease forwards;
+}
+
+
+@keyframes pageIn{
+
+  from{
+
+    opacity:0;
+
+    transform:
+      scale(.97);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+      scale(1);
+
+  }
+
+}
+
+
+/* ==================================================
+   FONT
+================================================== */
+
+.script{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+}
+
+
+/* ==================================================
+   SPARKLES
+================================================== */
+
+.sparkles span{
+
+  position:absolute;
+
+  color:#fff;
+
+  opacity:.7;
+
+  pointer-events:none;
+
+  animation:
+    sparkle 2.3s infinite alternate;
+}
+
+
+.sparkles span:nth-child(1){
+
+  left:9%;
+  top:14%;
+
+  font-size:14px;
+}
+
+
+.sparkles span:nth-child(2){
+
+  right:11%;
+  top:22%;
+
+  font-size:10px;
+
+  animation-delay:.5s;
+}
+
+
+.sparkles span:nth-child(3){
+
+  left:14%;
+  bottom:20%;
+
+  font-size:12px;
+
+  animation-delay:1s;
+}
+
+
+.sparkles span:nth-child(4){
+
+  right:12%;
+  bottom:14%;
+
+  font-size:9px;
+
+  animation-delay:1.5s;
+}
+
+
+@keyframes sparkle{
+
+  from{
+
+    opacity:.2;
+
+    transform:
+      scale(.7)
+      rotate(0deg);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+      scale(1.2)
+      rotate(20deg);
+
+  }
+
+}
+
+
+/* ==================================================
+   SLIDE 1
+================================================== */
+
+.envelope-page{
+
+  text-align:center;
+
+  cursor:pointer;
+}
+
+
+.envelope-title{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      42px,
+      12vw,
+      65px
+    );
+
+  line-height:1;
+
+  color:#f8eeee;
+
+  margin-bottom:
+    clamp(
+      25px,
+      7vw,
+      40px
+    );
+
+  text-shadow:
+    0 3px 10px
+    rgba(0,0,0,.55);
+}
+
+
+.my-envelope{
+
+  display:block;
+
+  width:
+    min(
+      72vw,
+      330px
+    );
+
+  max-width:330px;
+
+  height:auto;
+
+  margin:
+    0 auto 25px;
+
+  object-fit:contain;
+
+  user-select:none;
+
+  filter:
+    drop-shadow(
+      0 18px 18px
+      rgba(0,0,0,.55)
+    );
+
+  transition:
+    transform .2s ease;
+}
+
+
+.my-envelope.touching{
+
+  transform:
+    scale(.92);
+}
+
+
+.tap-text{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      28px,
+      8vw,
+      42px
+    );
+
+  color:white;
+
+  animation:
+    tapPulse 1.5s infinite;
+
+  cursor:pointer;
+
+  text-align:center;
+}
+
+
+@keyframes tapPulse{
+
+  0%,
+  100%{
+
+    opacity:1;
+
+    transform:
+      translateY(0);
+
+  }
+
+  50%{
+
+    opacity:.5;
+
+    transform:
+      translateY(4px);
+
+  }
+
+}
+
+
+/* ==================================================
+   SLIDE 2
+================================================== */
+
+#p2{
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(255,255,255,.025),
+      transparent 45%
+    ),
+
+    #5b0710;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+
+#p2 .birthday-card{
+
+  position:relative;
+
+  width:100%;
+  height:100%;
+
+  max-width:540px;
+  max-height:540px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+}
+
+
+/* ==================================================
+   ENVELOPE SLIDE 2
+================================================== */
+
+#p2 .my-envelope-design{
+
+  position:absolute;
+
+  width:72%;
+
+  max-width:390px;
+
+  height:auto;
+
+  left:50%;
+
+  top:52%;
+
+  transform:
+    translate(-50%,-50%);
+
+  z-index:2;
+
+  display:block;
+
+  object-fit:contain;
+
+  pointer-events:none;
+
+  user-select:none;
+
+  filter:
+    drop-shadow(
+      0 14px 18px
+      rgba(0,0,0,.38)
+    );
+}
+
+
+/* ==================================================
+   SLIDE 2 TEXT
+================================================== */
+
+#p2 .birthday-text{
+
+  position:absolute;
+
+  z-index:7;
+
+  top:28%;
+
+  left:50%;
+
+  width:63%;
+
+  transform:
+    translateX(-50%);
+
+  text-align:center;
+
+  color:#64151d;
+
+  pointer-events:none;
+}
+
+
+#p2 .birthday-text h1{
+
+  margin:0;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      28px,
+      7vw,
+      43px
+    );
+
+  font-weight:500;
+
+  line-height:1.15;
+
+  color:#64151d;
+
+  text-shadow:
+    0 1px 0
+    rgba(255,255,255,.8);
+}
+
+
+#p2 .ornament{
+
+  margin-top:12px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:20px;
+
+  line-height:1;
+
+  color:#a55d65;
+}
+
+
+/* ==================================================
+   SLIDE 2 TAP
+================================================== */
+
+#p2 .tap-text{
+
+  position:absolute;
+
+  z-index:20;
+
+  left:50%;
+
+  bottom:7%;
+
+  transform:
+    translateX(-50%);
+
+  color:#d8aeb1;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:27px;
+
+  white-space:nowrap;
+
+  cursor:pointer;
+
+  animation:
+    softPulse 1.7s infinite;
+}
+
+
+@keyframes softPulse{
+
+  0%,
+  100%{
+
+    opacity:.55;
+
+  }
+
+  50%{
+
+    opacity:1;
+
+  }
+
+}
+
+
+#p2::before{
+
+  content:"✦";
+
+  position:absolute;
+
+  top:12%;
+
+  left:7%;
+
+  color:#fff;
+
+  font-size:13px;
+
+  z-index:20;
+
+  opacity:.85;
+
+  pointer-events:none;
+}
+
+
+#p2::after{
+
+  content:"✧";
+
+  position:absolute;
+
+  top:17%;
+
+  right:8%;
+
+  color:#fff;
+
+  font-size:13px;
+
+  z-index:20;
+
+  opacity:.85;
+
+  pointer-events:none;
+}
+
+
+/* ==================================================
+   STORY SLIDES
+   SLIDE 3 & 5
+================================================== */
+
+.story-page{
+
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(255,255,255,.035),
+      transparent 45%
+    );
+}
+
+
+.story-number{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:14px;
+
+  letter-spacing:4px;
+
+  color:#d8aeb1;
+
+  margin-bottom:28px;
+
+  opacity:.85;
+}
+
+
+.story-text{
+
+  width:100%;
+
+  max-width:450px;
+
+  padding:
+    20px 20px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      28px,
+      7.5vw,
+      45px
+    );
+
+  line-height:1.28;
+
+  font-weight:400;
+
+  color:#fff;
+
+  text-align:center;
+
+  text-shadow:
+    0 3px 12px
+    rgba(0,0,0,.45);
+}
+
+
+.story-decoration{
+
+  margin-top:25px;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:34px;
+
+  color:#e5b8bb;
+
+  opacity:.9;
+}
+
+
+/* ==================================================
+   SLIDE 4
+   9 FOTO
+================================================== */
+
+#p4{
+
+  text-align:left;
+
+  overflow:hidden;
+}
+
+
+.split{
+
+  width:100%;
+
+  max-width:430px;
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap:14px;
+
+  align-items:center;
+}
+
+
+.big-title{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      38px,
+      11vw,
+      58px
+    );
+
+  line-height:.75;
+
+  text-transform:uppercase;
+}
+
+
+.big-title em{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:1.05em;
+
+  font-weight:400;
+
+  text-transform:none;
+}
+
+
+.sub{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      12px,
+      3.5vw,
+      17px
+    );
+
+  line-height:1.2;
+
+  margin-top:20px;
+}
+
+
+.collage{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:5px;
+}
+
+
+.polaroid{
+
+  background:#fff;
+
+  padding:
+    4px
+    4px
+    10px;
+
+  box-shadow:
+    0 5px 10px
+    rgba(0,0,0,.5);
+
+  transform:
+    rotate(var(--r));
+}
+
+
+.polaroid img{
+
+  display:block;
+
+  width:100%;
+
+  aspect-ratio:1;
+
+  object-fit:cover;
+}
+
+
+/* ==================================================
+   SLIDE 6 LONG MESSAGE
+================================================== */
+
+#p6{
+
+  justify-content:center;
+
+  padding:
+    max(18px,env(safe-area-inset-top))
+    14px
+    max(75px,env(safe-area-inset-bottom))
+    14px;
+}
+
+
+.long-message-card{
+
+  width:
+    min(
+      92vw,
+      470px
+    );
+
+  height:
+    min(
+      78vh,
+      650px
+    );
+
+  overflow-y:auto;
+
+  background:
+    rgba(255,255,255,.97);
+
+  color:#4b0a10;
+
+  border-radius:24px;
+
+  padding:
+    30px
+    23px
+    35px;
+
+  text-align:center;
+
+  box-shadow:
+    0 18px 35px
+    rgba(0,0,0,.6);
+
+  -webkit-overflow-scrolling:touch;
+
+  scrollbar-width:none;
+}
+
+
+.long-message-card::-webkit-scrollbar{
+  display:none;
+}
+
+
+.long-message-card h2{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      48px,
+      13vw,
+      72px
+    );
+
+  font-weight:400;
+
+  margin-bottom:18px;
+
+  color:#610a11;
+}
+
+
+.long-message-card .intro{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      21px,
+      5.5vw,
+      27px
+    );
+
+  line-height:1.3;
+
+  margin-bottom:22px;
+
+  color:#610a11;
+}
+
+
+.long-message-card p{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      17px,
+      4.5vw,
+      22px
+    );
+
+  line-height:1.48;
+
+  margin-bottom:17px;
+
+  color:#4b0a10;
+}
+
+
+.long-message-card .final-line{
+
+  margin-top:25px;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      32px,
+      8vw,
+      45px
+    );
+
+  line-height:1.2;
+
+  color:#610a11;
+}
+
+
+/* ==================================================
+   SLIDE 7
+================================================== */
+
+#p7{
+
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(255,255,255,.035),
+      transparent 45%
+    );
+}
+
+
+.final-card{
+
+  width:
+    min(
+      90vw,
+      450px
+    );
+
+  padding:
+    35px 25px;
+
+  text-align:center;
+}
+
+
+.final-card h2{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      55px,
+      15vw,
+      80px
+    );
+
+  font-weight:400;
+
+  line-height:1;
+
+  margin-bottom:30px;
+
+  color:#f8eeee;
+
+  text-shadow:
+    0 4px 12px
+    rgba(0,0,0,.45);
+}
+
+
+.final-card p{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      24px,
+      6.5vw,
+      34px
+    );
+
+  line-height:1.35;
+
+  color:#fff;
+}
+
+
+.final-heart{
+
+  margin-top:30px;
+
+  font-size:32px;
+
+  animation:
+    heartBeat 1.4s infinite;
+}
+
+
+@keyframes heartBeat{
+
+  0%,
+  100%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.2);
+  }
+}
+
+
+/* ==================================================
+   FLOATING HEARTS
+================================================== */
+
+.heart{
+
+  position:absolute;
+
+  bottom:-30px;
+
+  z-index:200;
+
+  color:#ff5d68;
+
+  pointer-events:none;
+
+  animation:
+    heartRise linear forwards;
+}
+
+
+@keyframes heartRise{
+
+  to{
+
+    transform:
+      translateY(-115vh)
+      translateX(var(--drift))
+      rotate(360deg);
+
+    opacity:0;
+
+  }
+
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.nav{
+
+  position:absolute;
+
+  z-index:100;
+
+  bottom:
+    max(
+      16px,
+      env(safe-area-inset-bottom)
+    );
+
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+}
+
+
+.nav button{
+
+  width:36px;
+  height:36px;
+
+  border-radius:50%;
+
+  border:
+    1px solid
+    rgba(255,255,255,.3);
+
+  background:
+    rgba(0,0,0,.4);
+
+  color:#fff;
+
+  font-size:20px;
+
+  cursor:pointer;
+}
+
+
+.dots{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:4px;
+}
+
+
+.dot{
+
+  width:5px;
+  height:5px;
+
+  border-radius:50%;
+
+  background:
+    rgba(255,255,255,.3);
+}
+
+
+.dot.active{
+
+  width:17px;
+
+  background:#fff;
+
+  border-radius:10px;
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media(max-width:380px){
+
+  .page{
+
+    padding-left:14px;
+    padding-right:14px;
+
+  }
+
+
+  /* SLIDE 1 */
+
+  .envelope-title{
+
+    font-size:43px;
+
+    margin-bottom:25px;
+
+  }
+
+
+  .my-envelope{
+
+    width:70vw;
+
+    margin-bottom:20px;
+
+  }
+
+
+  /* SLIDE 2 */
+
+  #p2 .my-envelope-design{
+
+    width:74%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    width:68%;
+
+    top:28%;
+
+  }
+
+
+  #p2 .birthday-text h1{
+
+    font-size:27px;
+
+  }
+
+
+  #p2 .tap-text{
+
+    font-size:24px;
+
+    bottom:6%;
+
+  }
+
+
+  /* STORY */
+
+  .story-text{
+
+    font-size:27px;
+
+    padding:
+      20px 10px;
+
+  }
+
+
+  /* SLIDE 4 */
+
+  .split{
+
+    gap:9px;
+
+  }
+
+
+  .big-title{
+
+    font-size:35px;
+
+  }
+
+
+  .sub{
+
+    font-size:11px;
+
+  }
+
+
+  /* LONG MESSAGE */
+
+  .long-message-card{
+
+    padding:
+      25px
+      18px
+      30px;
+
+  }
+
+
+  .long-message-card h2{
+
+    font-size:48px;
+
+  }
+
+
+  .long-message-card p{
+
+    font-size:18px;
+
+  }
+
+
+  /* FINAL */
+
+  .final-card h2{
+
+    font-size:58px;
+
+  }
+
+
+  .final-card p{
+
+    font-size:25px;
+
+  }
+
+}
+
+
+/* ==================================================
+   LAYAR PENDEK
+================================================== */
+
+@media(max-height:650px){
+
+  /* SLIDE 1 */
+
+  .envelope-title{
+
+    margin-bottom:15px;
+
+  }
+
+
+  .my-envelope{
+
+    width:
+      min(
+        55vw,
+        250px
+      );
+
+    margin-bottom:15px;
+
+  }
+
+
+  .tap-text{
+
+    font-size:30px;
+
+  }
+
+
+  /* SLIDE 2 */
+
+  #p2 .my-envelope-design{
+
+    width:63%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    top:26%;
+
+  }
+
+
+  #p2 .birthday-text h1{
+
+    font-size:28px;
+
+  }
+
+
+  #p2 .tap-text{
+
+    bottom:4%;
+
+  }
+
+
+  /* STORY */
+
+  .story-text{
+
+    font-size:25px;
+
+  }
+
+
+  /* SLIDE 4 */
+
+  .big-title{
+
+    font-size:35px;
+
+  }
+
+
+  /* LONG MESSAGE */
+
+  .long-message-card{
+
+    height:76vh;
+
+  }
+
+}
+
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+@media(min-width:601px){
+
+  #p2 .birthday-card{
+
+    max-width:540px;
+
+    max-height:540px;
+
+  }
+
+
+  #p2 .my-envelope-design{
+
+    width:72%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    width:63%;
+
+    top:28%;
+
+  }
+
+
+  .story-text{
+
+    font-size:42px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<main
+  class="book"
+  id="book"
+>
+
+
+<!-- ==================================================
+     SLIDE 1
+================================================== -->
+
+<section
+  class="page active envelope-page"
+  id="p1"
+>
+
+  <div class="sparkles">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+  </div>
+
+
+  <div class="envelope-title">
+
+    Press The Envelope
+
+  </div>
+
+
+  <img
+    src="envelope.jpg"
+    id="myEnvelope"
+    class="my-envelope"
+    alt="Envelope"
+    role="button"
+    tabindex="0"
+    draggable="false"
+    onclick="openEnvelope(event)"
+    onkeydown="
+      if(event.key==='Enter' ||
+         event.key===' ')
+      openEnvelope(event)
+    "
+  >
+
+
+  <div
+    class="tap-text"
+    onclick="openEnvelope(event)"
+    role="button"
+    tabindex="0"
+  >
+
+    tap to start
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 2
+================================================== -->
+
+<section
+  class="page"
+  id="p2"
+>
+
+  <div class="birthday-card">
+
+
+    <!-- ENVELOPE -->
+
+    <img
+      src="envelope.png"
+      class="my-envelope-design"
+      alt="Birthday Envelope"
+      draggable="false"
+      onerror="
+        this.onerror=null;
+        this.src='envelope.jpg';
+      "
+    >
+
+
+    
+    </div>
+
+
+    <!-- NEXT -->
+
+    <div
+      class="tap-text"
+      onclick="go(3)"
+    >
+
+      Tap For Next
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 3
+================================================== -->
+
+<section
+  class="page story-page"
+  id="p3"
+>
+
+  <div class="sparkles">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+  </div>
+
+
+  <div class="story-number">
+
+    A LITTLE THOUGHT
+
+  </div>
+
+
+  <div class="story-text">
+
+    Entah kenapa, kamu yang akhirnya
+    berhasil membuat aku ingin bertahan.
+
+  </div>
+
+
+  <div class="story-decoration">
+
+    with you ♡
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 4
+     9 FOTO TETAP
+================================================== -->
+
+<section
+  class="page"
+  id="p4"
+>
+
+
+  <div class="split">
+
+
+    <!-- LEFT -->
+
+    <div>
+
+      <h1 class="big-title">
+
+        MEET<br>
+        THE<br>
+
+        <em>
+          Girl
+        </em>
+
+      </h1>
+
+
+      <div class="sub">
+
+        the one we're celebrating today.
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT - 9 FOTO -->
+
+    <div class="collage">
+
+
+      <div
+        class="polaroid"
+        style="--r:-5deg"
+      >
+
+        <img
+          src="foto1.jpg"
+          alt="Foto 1"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:4deg"
+      >
+
+        <img
+          src="foto2.jpg"
+          alt="Foto 2"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:-2deg"
+      >
+
+        <img
+          src="foto3.jpg"
+          alt="Foto 3"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:3deg"
+      >
+
+        <img
+          src="foto4.jpg"
+          alt="Foto 4"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:-4deg"
+      >
+
+        <img
+          src="foto5.jpg"
+          alt="Foto 5"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:5deg"
+      >
+
+        <img
+          src="foto6.jpg"
+          alt="Foto 6"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:-3deg"
+      >
+
+        <img
+          src="foto7.jpg"
+          alt="Foto 7"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:4deg"
+      >
+
+        <img
+          src="foto8.jpg"
+          alt="Foto 8"
+        >
+
+      </div>
+
+
+      <div
+        class="polaroid"
+        style="--r:-5deg"
+      >
+
+        <img
+          src="foto9.jpg"
+          alt="Foto 9"
+        >
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 5
+================================================== -->
+
+<section
+  class="page story-page"
+  id="p5"
+>
+
+
+  <div class="sparkles">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+  </div>
+
+
+  <div class="story-number">
+
+    FOR YOU
+
+  </div>
+
+
+  <div class="story-text">
+
+    Aku nggak janji semuanya akan selalu
+    sempurna, tapi aku akan selalu berusaha
+    menghargai keberadaan kamu.
+
+  </div>
+
+
+  <div class="story-decoration">
+
+    always ♡
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 6
+     PESAN PANJANG
+================================================== -->
+
+<section
+  class="page"
+  id="p6"
+>
+
+
+  <div class="long-message-card">
+
+
+    <h2>
+
+    For You
+
+    </h2>
+
+
+    <div class="intro">
+
+      Untuk kamu yang selalu punya
+      tempat spesial di hati aku.
+
+    </div>
+
+
+    <p>
+
+      Aku mungkin bukan orang yang paling
+      pandai mengungkapkan perasaan, dan
+      terkadang caraku menunjukkan sayang
+      juga nggak selalu sempurna. Tapi aku
+      mau kamu tahu, aku benar-benar
+      menghargai kehadiran kamu di hidup aku.
+
+    </p>
+
+
+    <p>
+
+      Terima kasih sudah mau menemani aku,
+      mendengarkan cerita-ceritaku, dan tetap
+      ada di saat keadaan nggak selalu mudah.
+      Banyak hal kecil tentang kamu yang mungkin
+      terlihat sederhana, tapi buat aku semuanya
+      punya arti.
+
+    </p>
+
+
+    <p>
+
+      Aku nggak tahu akan seperti apa perjalanan
+      kita ke depannya. Yang aku tahu, selama kita
+      masih bersama, aku ingin terus belajar
+      memahami kamu, menjaga perasaan kamu,
+      dan membuat kamu merasa dihargai.
+
+    </p>
+
+
+    <p>
+
+      Semoga kita bisa terus saling menjaga,
+      saling menguatkan, dan melewati banyak
+      hal bersama. Terima kasih sudah menjadi
+      bagian dari cerita hidup aku.
+
+    </p>
+
+
+    <p>
+
+      Aku sayang kamu, lebih dari yang sering
+      bisa aku ungkapkan.
+
+    </p>
+
+
+    <p>
+
+      Dan aku berharap, apa pun yang nanti kita
+      lewati, kita tetap bisa saling memilih dan
+      saling mengerti. Aku nggak mau hubungan ini
+      cuma menjadi cerita yang pernah kita punya,
+      aku ingin terus membuat cerita baru
+      bersama kamu.
+
+    </p>
+
+
+    <p>
+
+      Mungkin aku nggak selalu bisa memberikan
+      hal-hal yang sempurna, tapi aku akan
+      berusaha memberikan yang terbaik yang aku
+      bisa. Aku ingin kamu merasa bahwa kehadiran
+      kamu benar-benar berarti buat aku.
+
+    </p>
+
+
+    <p>
+
+      Kalau suatu saat kita sedang sama-sama
+      capek atau keadaan terasa berat, semoga
+      kita nggak mudah menyerah satu sama lain.
+      Semoga kita tetap ingat alasan kenapa kita
+      memilih untuk bersama sejak awal.
+
+    </p>
+
+
+    <p>
+
+      Aku juga ingin mengucapkan terima kasih
+      untuk semua momen yang sudah kita lewati
+      sampai sekarang. Untuk tawa, cerita,
+      perhatian, bahkan hal-hal kecil yang
+      mungkin nantinya akan kita rindukan.
+
+    </p>
+
+
+    <p>
+
+      Aku nggak tahu sejauh apa perjalanan kita
+      nanti, tapi untuk sekarang, aku cuma ingin
+      menikmati setiap prosesnya bersama kamu.
+
+    </p>
+
+
+    <p>
+
+      Semoga kamu selalu bahagia, dan semoga aku
+      masih bisa menjadi salah satu alasan di
+      balik kebahagiaan kamu.
+
+    </p>
+
+
+    <p>
+
+      Sekali lagi, terima kasih sudah hadir
+      di hidup aku. Aku sayang kamu, dan aku akan
+      selalu menghargai setiap waktu yang kita
+      punya bersama.
+
+    </p>
+
+
+    <div class="final-line">
+
+      Always choose you ♡
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 7
+================================================== -->
+
+<section
+  class="page"
+  id="p7"
+>
+
+
+  <div class="sparkles">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+  </div>
+
+
+  <div class="final-card">
+
+
+    <h2>
+
+      Thank You
+
+    </h2>
+
+
+    <p>
+
+      Terima kasih sudah menjadi bagian
+      dari hidup aku.
+
+      <br><br>
+
+      Aku sayang kamu, lebih dari yang sering
+      bisa aku ungkapkan.
+
+    </p>
+
+
+    <div class="final-heart">
+
+      ❤️
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
+
+<div
+  class="nav"
+  id="nav"
+  style="display:none"
+>
+
+
+  <button
+    type="button"
+    onclick="prev()"
+  >
+
+    ‹
+
+  </button>
+
+
+  <div
+    class="dots"
+    id="dots"
+  ></div>
+
+
+  <button
+    type="button"
+    onclick="next()"
+  >
+
+    ›
+
+  </button>
+
+
+</div>
+
+
+</main>
+
+</div>
+
+
+<!-- ==================================================
+     BACKGROUND MUSIC
+================================================== -->
+
+<audio
+  id="bgMusic"
+  loop
+  preload="auto"
+>
+
+  <source
+    src="music.mp3"
+    type="audio/mpeg"
+  >
+
+</audio>
+
+
+<script>
+
+/* ==================================================
+   PAGE SYSTEM
+================================================== */
+
+const totalPages = 7;
+
+let currentPage = 1;
+
+let musicStarted = false;
+
+
+const pages = [];
+
+for(
+  let i = 1;
+  i <= totalPages;
+  i++
+){
+
+  pages.push(
+    document.getElementById(
+      "p" + i
+    )
+  );
+
+}
+
+
+/* ==================================================
+   RENDER PAGE
+================================================== */
+
+function renderPage(){
+
+  pages.forEach(
+    (page,index)=>{
+
+      if(page){
+
+        page.classList.toggle(
+          "active",
+          index === currentPage - 1
+        );
+
+      }
+
+    }
+  );
+
+
+  const nav =
+    document.getElementById("nav");
+
+
+  nav.style.display =
+    currentPage === 1
+      ? "none"
+      : "flex";
+
+
+  const dots =
+    document.getElementById("dots");
+
+
+  dots.innerHTML = "";
+
+
+  for(
+    let i = 1;
+    i <= totalPages;
+    i++
+  ){
+
+    const dot =
+      document.createElement("span");
+
+
+    dot.className =
+      "dot" +
+      (
+        i === currentPage
+          ? " active"
+          : ""
+      );
+
+
+    dots.appendChild(dot);
+
+  }
+
+}
+
+
+/* ==================================================
+   CHANGE PAGE
+================================================== */
+
+function go(page){
+
+  if(
+    page < 1 ||
+    page > totalPages
+  ){
+
+    return;
+
+  }
+
+
+  currentPage = page;
+
+  renderPage();
+
+  createHearts();
+
+}
+
+
+/* ==================================================
+   NEXT
+================================================== */
+
+function next(){
+
+  if(
+    currentPage < totalPages
+  ){
+
+    go(
+      currentPage + 1
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   PREVIOUS
+================================================== */
+
+function prev(){
+
+  if(
+    currentPage > 1
+  ){
+
+    go(
+      currentPage - 1
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   START MUSIC
+================================================== */
+
+function startMusic(){
+
+  const music =
+    document.getElementById("bgMusic");
+
+
+  if(
+    musicStarted
+  ){
+
+    return;
+
+  }
+
+
+  musicStarted = true;
+
+
+  music.volume = 0.45;
+
+
+  const playPromise =
+    music.play();
+
+
+  if(
+    playPromise !== undefined
+  ){
+
+    playPromise.catch(
+      error => {
+
+        console.log(
+          "Music autoplay diblokir browser:",
+          error
+        );
+
+      }
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   ENVELOPE CLICK
+================================================== */
+
+let envelopeOpened = false;
+
+
+function openEnvelope(event){
+
+  if(event){
+
+    event.preventDefault();
+
+    event.stopPropagation();
+
+  }
+
+
+  if(
+    envelopeOpened
+  ){
+
+    return;
+
+  }
+
+
+  envelopeOpened = true;
+
+
+  const envelope =
+    document.getElementById(
+      "myEnvelope"
+    );
+
+
+  if(envelope){
+
+    envelope.classList.add(
+      "touching"
+    );
+
+  }
+
+
+  /* MUSIC START */
+
+  startMusic();
+
+
+  /* HEART EFFECT */
+
+  createHearts();
+
+
+  /* NEXT PAGE */
+
+  setTimeout(
+    function(){
+
+      if(envelope){
+
+        envelope.classList.remove(
+          "touching"
+        );
+
+      }
+
+
+      go(2);
+
+    },
+    350
+  );
+
+}
+
+
+/* ==================================================
+   FLOATING HEARTS
+================================================== */
+
+function createHearts(){
+
+  const book =
+    document.getElementById("book");
+
+
+  for(
+    let i = 0;
+    i < 8;
+    i++
+  ){
+
+    setTimeout(
+      ()=>{
+
+        const heart =
+          document.createElement("div");
+
+
+        heart.className =
+          "heart";
+
+
+        heart.textContent =
+          Math.random() > .5
+            ? "♥"
+            : "♡";
+
+
+        heart.style.left =
+          (
+            Math.random() * 100
+          ) + "%";
+
+
+        heart.style.fontSize =
+          (
+            12 +
+            Math.random() * 18
+          ) + "px";
+
+
+        heart.style.setProperty(
+          "--drift",
+          (
+            (Math.random() - .5) * 130
+          ) + "px"
+        );
+
+
+        heart.style.animationDuration =
+          (
+            3 +
+            Math.random() * 2
+          ) + "s";
+
+
+        book.appendChild(
+          heart
+        );
+
+
+        setTimeout(
+          ()=>{
+
+            heart.remove();
+
+          },
+          6000
+        );
+
+
+      },
+      i * 120
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   SWIPE MOBILE
+================================================== */
+
+let startX = 0;
+
+let startY = 0;
+
+
+const book =
+  document.getElementById(
+    "book"
+  );
+
+
+book.addEventListener(
+  "touchstart",
+  function(e){
+
+    startX =
+      e.changedTouches[0]
+        .screenX;
+
+
+    startY =
+      e.changedTouches[0]
+        .screenY;
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+book.addEventListener(
+  "touchend",
+  function(e){
+
+    const endX =
+      e.changedTouches[0]
+        .screenX;
+
+
+    const endY =
+      e.changedTouches[0]
+        .screenY;
+
+
+    const distanceX =
+      endX - startX;
+
+
+    const distanceY =
+      endY - startY;
+
+
+    /*
+      Swipe hanya dianggap valid
+      jika horizontal lebih besar
+      daripada vertical.
+    */
+
+    if(
+      Math.abs(distanceX) > 50 &&
+      Math.abs(distanceX) >
+      Math.abs(distanceY)
+    ){
+
+      if(
+        distanceX < 0
+      ){
+
+        next();
+
+      }else{
+
+        prev();
+
+      }
+
+    }
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+/* ==================================================
+   KEYBOARD
+================================================== */
+
+document.addEventListener(
+  "keydown",
+  function(e){
+
+    if(
+      e.key === "ArrowRight"
+    ){
+
+      next();
+
+    }
+
+
+    if(
+      e.key === "ArrowLeft"
+    ){
+
+      prev();
+
+    }
+
+  }
+);
+
+
+/* ==================================================
+   PAGE 1 FALLBACK CLICK
+================================================== */
+
+const page1 =
+  document.getElementById("p1");
+
+
+if(page1){
+
+  page1.addEventListener(
+    "click",
+    function(e){
+
+      const clickedEnvelope =
+        e.target.closest(
+          "#myEnvelope"
+        );
+
+
+      const clickedTap =
+        e.target.closest(
+          ".tap-text"
+        );
+
+
+      if(
+        clickedEnvelope ||
+        clickedTap
+      ){
+
+        openEnvelope(e);
+
+      }
+
+    }
+  );
+
+}
+
+
+/* ==================================================
+   INIT
+================================================== */
+
+renderPage();
+
+</script>
+
+</body>
+</html>
+
